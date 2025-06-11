@@ -1,59 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CONPUS 登録確認のご案内</title>
   <style>
-    body {{
+    body {
       background-color: #121826;
       color: #ffffff;
       font-family: "Yu Gothic", sans-serif;
       padding: 20px;
       text-align: center;
-    }}
-    h1 {{
+    }
+    h1 {
       font-size: 24px;
       margin-bottom: 12px;
-    }}
-    p.description {{
+    }
+    p.description {
       font-size: 16px;
       color: #ffffff;
       font-weight: bold;
       margin-bottom: 32px;
-    }}
-    .image-row {{
+    }
+    .image-row {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 8px;
+      flex-wrap: nowrap;
       overflow-x: auto;
       padding-bottom: 10px;
-      -webkit-overflow-scrolling: touch;
-    }}
-    .image-row img {{
-      height: 300px;
+    }
+    .image-row img {
+      height: 260px;
       border-radius: 12px;
       flex-shrink: 0;
-    }}
-    .image-row img.large {{
-      height: 340px;
-    }}
-    .arrow {{
-      font-size: 36px;
-      font-weight: bold;
+    }
+    .arrow {
+      font-size: 32px;
       color: #7dd3fc;
-      flex-shrink: 0;
-      line-height: 300px;
-    }}
-    .logo {{
-      margin-top: 24px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      margin-top: 20px;
       text-align: left;
-    }}
-    .logo img {{
+    }
+    .logo img {
       width: 140px;
       height: auto;
-    }}
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      p.description {
+        font-size: 18px;
+      }
+      .image-row img {
+        height: 320px;
+      }
+      .arrow {
+        font-size: 40px;
+      }
+      .logo img {
+        width: 160px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -63,19 +78,19 @@
   </p>
 
   <div class="image-row">
-    <img src="images/1.png" alt="Step 1">
+    <img src="https://junichi0710.github.io/conpus-guide2/images/1.png" alt="Step 1" />
     <div class="arrow">＞</div>
-    <img src="images/2.png" alt="Step 2">
+    <img src="https://junichi0710.github.io/conpus-guide2/images/2.png" alt="Step 2" />
     <div class="arrow">＞</div>
-    <img src="images/3.png" alt="Step 3">
+    <img src="https://junichi0710.github.io/conpus-guide2/images/3.png" alt="Step 3" />
     <div class="arrow">＞</div>
-    <img src="images/4.png" alt="Step 4">
+    <img src="https://junichi0710.github.io/conpus-guide2/images/4.png" alt="Step 4" />
     <div class="arrow">＞</div>
-    <img src="images/5.png" alt="Step 5" class="large">
+    <img src="https://junichi0710.github.io/conpus-guide2/images/5.png" alt="Step 5" style="height: 360px;" />
   </div>
 
   <div class="logo">
-    <img src="images/logo_conpus_2.png" alt="CONPUS Logo">
+    <img src="https://junichi0710.github.io/conpus-guide2/images/logo_conpus_2.png" alt="CONPUS Logo" />
   </div>
 </body>
 </html>
